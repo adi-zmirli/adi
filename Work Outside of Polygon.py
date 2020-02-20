@@ -56,7 +56,9 @@ drivers_df = find_drivers()
 df = trackings_df.merge(drivers_df, on='driver_code', how='left').drop(['driver_code'], axis=1)
 new_df = df.groupby('device_id').apply(lambda x: ','.join(x.driver_name))
 
-print("end")
+
+
+print("end program")
 
 
 
